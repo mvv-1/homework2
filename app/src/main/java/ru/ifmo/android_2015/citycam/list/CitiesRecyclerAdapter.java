@@ -12,7 +12,7 @@ import ru.ifmo.android_2015.citycam.model.City;
 import ru.ifmo.android_2015.citycam.model.LargeRussianCities;
 
 /**
- * Created by dmitry.trunin on 19.10.2015.
+ * Адаптер для списка городов. Использует статичные данные из LargeRussianCities.
  */
 public class CitiesRecyclerAdapter extends RecyclerView.Adapter<CitiesRecyclerAdapter.CityViewHolder>
         implements View.OnClickListener {

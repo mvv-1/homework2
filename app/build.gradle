@@ -7,7 +7,7 @@ android {
     defaultConfig {
         applicationId "ru.ifmo.android_2015.citycam"
         minSdkVersion 14
-        targetSdkVersion 23
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
     }

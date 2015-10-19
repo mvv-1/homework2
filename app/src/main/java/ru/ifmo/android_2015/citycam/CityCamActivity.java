@@ -1,6 +1,5 @@
 package ru.ifmo.android_2015.citycam;
 
-import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -43,6 +42,9 @@ public class CityCamActivity extends AppCompatActivity {
         getSupportActionBar().setTitle(city.name);
 
         progressView.setVisibility(View.VISIBLE);
+
+        // Здесь должен быть код, инициирующий асинхронную загрузку изображения с веб-камеры
+        // в выбранном городе.
     }
 
     private static final String TAG = "CityCam";

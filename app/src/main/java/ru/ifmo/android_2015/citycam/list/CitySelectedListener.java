@@ -3,8 +3,11 @@ package ru.ifmo.android_2015.citycam.list;
 import ru.ifmo.android_2015.citycam.model.City;
 
 /**
- * Created by dmitry.trunin on 19.10.2015.
+ * Интерфейс дял получения событий от списка городов.
  */
 public interface CitySelectedListener {
+    /**
+     * Вызывается, когда указанный город был выбран в списке городов.
+     */
     void onCitySelected(City city);
 }

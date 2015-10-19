@@ -25,7 +25,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             style="@android:style/Widget.Holo.Light.ProgressBar.Large.Inverse"/>
-
     </FrameLayout>
+
+    <!-- Добавьте сюда еще View с информацией о выбранном городе и показанной веб-камеры -->
 
 </RelativeLayout>

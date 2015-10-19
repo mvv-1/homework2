@@ -1,7 +1,7 @@
 package ru.ifmo.android_2015.citycam.model;
 
 /**
- * Статический список крупных российских городов.
+ * Статический список крупных российских (+немного из СНГ) городов.
  */
 public final class LargeRussianCities {
 

@@ -5,13 +5,27 @@
     android:layout_height="match_parent"
     android:background="#fff">
 
-    <ImageView
-        android:id="@+id/cam_image"
-        android:layout_width="320dp"
-        android:layout_height="200dp"
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:background="#999"/>
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/cam_image"
+            android:layout_width="320dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:background="#999"/>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@android:style/Widget.Holo.Light.ProgressBar.Large.Inverse"/>
+
+    </FrameLayout>
 
 </RelativeLayout>

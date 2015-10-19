@@ -1,8 +1,12 @@
 package ru.ifmo.android_2015.citycam;
 
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
 
 import ru.ifmo.android_2015.citycam.model.City;
 
@@ -19,6 +23,9 @@ public class CityCamActivity extends AppCompatActivity {
 
     private City city;
 
+    private ImageView camImageView;
+    private ProgressBar progressView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,8 +37,12 @@ public class CityCamActivity extends AppCompatActivity {
         }
 
         setContentView(R.layout.activity_city_cam);
+        camImageView = (ImageView) findViewById(R.id.cam_image);
+        progressView = (ProgressBar) findViewById(R.id.progress);
 
         getSupportActionBar().setTitle(city.name);
+
+        progressView.setVisibility(View.VISIBLE);
     }
 
     private static final String TAG = "CityCam";

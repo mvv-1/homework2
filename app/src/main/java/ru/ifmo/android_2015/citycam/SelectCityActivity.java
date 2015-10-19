@@ -1,5 +1,6 @@
 package ru.ifmo.android_2015.citycam;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -33,6 +34,9 @@ public class SelectCityActivity extends AppCompatActivity
     @Override
     public void onCitySelected(City city) {
         Log.i(TAG, "onCitySelected: " + city);
+        Intent cityCam = new Intent(this, CityCamActivity.class);
+        cityCam.putExtra(CityCamActivity.EXTRA_CITY, city);
+        startActivity(cityCam);
     }
 
     private static final String TAG = "SelectCity";

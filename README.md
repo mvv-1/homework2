@@ -17,6 +17,10 @@
 * Получить результат выполнения этого AsyncTask в CityCamActivity и показать полученное изображение и дополнительную информацию о камере в UI
 * Для отображения дополнительной информации может потребовать добавить что-нибудь в верстку: res/layout/activity_city_cam.xml
 
+## Примечание
+
+В отличие от лекции, где использовались методы onRetainNonConfigurationInstance() и getLastNonConfigurationInstance(), в коде CityCamActivity для той же цели следует использовать методы onRetainCustomNonConfigurationInstance() и getLastCustomNonConfigurationInstance(). Это вызвано тем, что у CityCamActivity базовым классом является FragmentActivity, в котором первые методы объявлены final. Кто хочет, может использовать фрагменты. 
+
 ## Требования
 
 * При повороте экрана НЕ должна происходить повторная загрузка данных
